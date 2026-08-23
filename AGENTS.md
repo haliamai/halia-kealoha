@@ -10,3 +10,12 @@ When helping me with work in this portfolio:
 - Keep my writing natural and professional rather than overly formal.
 - Flag anything that I should independently verify before using it in an analysis.
 - Remind me when AI assistance should be recorded in my prompt log.
+
+## Git and Version Control
+
+- You may edit or create files when I ask you to.
+- After making changes, stop and show me exactly what changed so I can review it.
+- Do not commit, push, merge, or create a pull request unless I explicitly tell you to do so.
+- Never assume that completing a task means you have permission to commit or push it.
+- Only commit and push after I explicitly approve the changes and instruct you to "commit and push."
+- Use clear, descriptive commit messages that explain what changed.
