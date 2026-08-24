@@ -15,6 +15,6 @@ When helping me with work in this portfolio:
 
 - You may edit or create files when I ask you to.
 - After making changes, stop and show me exactly what changed so I can review it.
-- Do not commit, push, merge, or create a pull request automatically after making changes.
-- When I explicitly instruct you to "commit and push," proceed without asking for additional confirmation.
-- Use clear, descriptive commit messages that explain what changed.
+- When I explicitly tell you to commit and push, proceed without asking for additional confirmation.
+- Use clear, descriptive commit messages that explain what changed..
+- Do not modify previously committed coursework unless I specifically ask you to.
