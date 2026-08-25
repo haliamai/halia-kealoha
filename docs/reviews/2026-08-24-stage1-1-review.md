@@ -6,7 +6,7 @@
 | Criterion | Earned | Notes |
 |---|---|---|
 | Problem restated in your own voice | 25 / 30 | Accurate and in your own words, and you name the four things that matter — return per crop, labor, diminishing returns, planting limits. It is on the brief side of the "half a page to a page" the stage asks for, and it stops at listing the factors rather than saying how they interact. |
-| Hypothesis names a specific mix | 25 / 25 | 20 tomato / 20 carrot / 24 mesclun. Specific and committed. No complaints here. |
+| Hypothesis names a specific mix | 25 / 25 | You name 20 tomato / 20 carrot / 24 mesclun. Specific and committed. No complaints here. |
 | Economic mechanism | 15 / 25 | This is where the score comes from. The reasoning is "I think tomatoes may have the largest return, but the cost of labor could impact how many beds are actually worth planting" — and that sentence is hedged in both directions, so no result can contradict it. Your assumptions section goes further the wrong way: "we should try to use all 64 beds and diversify the crops rather than rely too heavily on one" is close to the one rationale the stage explicitly rules out, because diversification-for-its-own-sake would justify any mix. The case gives you three numbers that decide this — 10%, 2.5%, 1.25% per bed — and the brief does not use them. |
 | Falsifiability and process | 12 / 20 | You wrote the section, which puts you ahead of several people, but the content is circular: "I would know I was wrong if the model shows that a different mix would generate more profit." That is true of every hypothesis by construction. The second clause gets closer — "if labor costs make some of my predicted beds more expensive to produce than what they earn" is an actual mechanism — and that is the sentence to build on. Brief committed 2026-08-22 with no modeling before it. Correct path, correct order. |
 | **Raw total** | **77 / 100** | — |
@@ -19,7 +19,7 @@ You scored 99 on Stage 0 and had the cleanest repository in the cohort. This sta
 
 Stage 0 rewarded craft: structure, discipline, follow-through. You were the best in the cohort at it. Stage 1 rewards committing to a claim that could be wrong, and your brief avoids committing. "Tomatoes may have the largest return, but labor could impact how many beds are worth planting" is true no matter what the model says, and a prediction that survives every outcome is not a prediction. This is a very common instinct and it is not carelessness — hedging feels careful. In an engagement brief it is the opposite, because the whole value of the document is that it can be shown wrong later.
 
-The good news is that this is one paragraph of work, and the deadline has not passed.
+The good news is that this is one paragraph of work for you, and the deadline has not passed.
 
 ### What I'd fix first
 
