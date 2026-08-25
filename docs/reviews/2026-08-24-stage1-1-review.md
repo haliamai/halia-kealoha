@@ -1,37 +1,33 @@
 <!-- PR TARGET: https://github.com/haliamai/halia-kealoha | Stage 1.1 (2.5 pts) -->
-# Stage 1.1 review — engagement brief · **80 / 100** (B-) · 2.00 / 2.5 pts
+# Stage 1.1 review — engagement brief · **89 / 100** (B+) · 2.23 / 2.5 pts
 
 **Brief:** [`docs/briefs/perfect-competition-brief.md`](https://github.com/haliamai/halia-kealoha/blob/main/docs/briefs/perfect-competition-brief.md)
 
+> Re-graded 2026-08-25 against your revised brief. Your previous score was 80. This is the largest single improvement anyone made on this stage, and it came from one paragraph of work.
+
 | Criterion | Earned | Notes |
 |---|---|---|
-| Problem restated in your own voice | 25 / 30 | Accurate and in your own words, and you name the four things that matter — return per crop, labor, diminishing returns, planting limits. It is on the brief side of the "half a page to a page" the stage asks for, and it stops at listing the factors rather than saying how they interact. |
-| Hypothesis names a specific mix | 25 / 25 | You name 20 tomato / 20 carrot / 24 mesclun. Specific and committed. No complaints here. |
-| Economic mechanism | 15 / 25 | This is where the score comes from. The reasoning is "I think tomatoes may have the largest return, but the cost of labor could impact how many beds are actually worth planting" — and that sentence is hedged in both directions, so no result can contradict it. Your assumptions section goes further the wrong way: "we should try to use all 64 beds and diversify the crops rather than rely too heavily on one" is close to the one rationale the stage explicitly rules out, because diversification-for-its-own-sake would justify any mix. The case gives you three numbers that decide this — 10%, 2.5%, 1.25% per bed — and the brief does not use them. |
-| Falsifiability and process | 12 / 20 | You wrote the section, which puts you ahead of several people, but the content is circular: "I would know I was wrong if the model shows that a different mix would generate more profit." That is true of every hypothesis by construction. The second clause gets closer — "if labor costs make some of my predicted beds more expensive to produce than what they earn" is an actual mechanism — and that is the sentence to build on. Brief committed 2026-08-22 with no modeling before it. Correct path, correct order. |
-| **Raw total** | **77 / 100** | — |
-| **Floor applied** | **+3** | 80% floor: a committed brief that states the problem and names a specific mix |
-| **Final** | **80 / 100** | floored |
-
-### A straight word about this score
-
-You scored 99 on Stage 0 and had the cleanest repository in the cohort. This stage is testing something different, and it is worth naming the difference rather than letting the number speak for itself.
-
-Stage 0 rewarded craft: structure, discipline, follow-through. You were the best in the cohort at it. Stage 1 rewards committing to a claim that could be wrong, and your brief avoids committing. "Tomatoes may have the largest return, but labor could impact how many beds are worth planting" is true no matter what the model says, and a prediction that survives every outcome is not a prediction. This is a very common instinct and it is not carelessness — hedging feels careful. In an engagement brief it is the opposite, because the whole value of the document is that it can be shown wrong later.
-
-The good news is that this is one paragraph of work for you, and the deadline has not passed.
+| Problem restated in your own voice | 25 / 30 | Unchanged and still accurate — you name the four things that matter: return per crop, labor requirements, diminishing returns, and planting limits. It remains on the brief side of the "half a page to a page" the stage asks for, and it still stops at listing the factors rather than saying how they push against each other. That is the only part of this brief that did not move. |
+| Hypothesis names a specific mix | 25 / 25 | You name 20 tomato / 20 carrot / 24 mesclun. Specific and committed. |
+| Economic mechanism | 22 / 25 | This is where you gained. The old version said tomatoes "may" have the largest return and labor "could" matter, which no result could contradict. The new one uses the three numbers the case gives you and then takes a side: "the labor required for tomatoes increases much faster at 10% per additional bed compared with 2.5% for carrots and 1.25% for mesclun, but I think the higher return on tomatoes will still make it worth planting all 20 beds." That is a real claim with a real mechanism, and the model can knock it down. You also cut the diversification line and replaced it with something honest — leaving beds empty "feels like a missed opportunity", and you acknowledge the model may disagree. |
+| Falsifiability and process | 17 / 20 | Also much improved. "I would know I was wrong if the model shows that the most profitable mix uses significantly fewer than 20 tomato beds. That would mean I underestimated how much the 10% increase in labor adds up" names a direction, a magnitude, and what it would prove — the old version could not fail. The remaining gap is the word "significantly": 20 beds down to 17 and 20 down to 10 are very different outcomes, and only one of them means you were wrong about the mechanism. |
+| **Final** | **89 / 100** | earned on merit |
 
 ### What I'd fix first
 
-- Commit to a mechanism, using the three numbers the case hands you. Tomato labor grows 10% per additional bed, carrots 2.5%, mesclun 1.25%. Those compound: the 20th tomato bed needs roughly 6.7 times the labor per bed of the first, while the 20th carrot bed needs about 1.6 times. Given that, ask whether you still believe tomatoes run all the way to 20. Whatever you conclude, say why in terms of those rates. Something like "tomatoes reach their cap because even at 6.7x labor the $8,800 price still covers marginal cost" is a claim the model can knock down — which is exactly what you want.
+- Put a number on "significantly". Decide now, before the model runs: is 17 tomato beds close enough that you were basically right? Is 14? Is 10 clearly wrong? Writing that band down is a five-minute job and it is the difference between a Stage 3 reflection that concludes something and one that grades itself generously after the fact.
 
-- Cut the diversification sentence, or make it economic. "Diversify rather than rely too heavily on one crop" is a risk argument, and this model has no risk in it — prices and yields are certain. If you mean something economic (the caps force spreading, or labor smooths across crops), say that instead.
+- Optional, if you want the problem statement to match the rest: two or three sentences on how the four factors interact — that the caps sum to 70 against 64 beds, so they cannot all bind; that labor is bought in $25,000 blocks; that a crop can stop either because marginal cost catches price or because it runs into its cap. You clearly know this now, because your hypothesis depends on it.
 
-- Rewrite the falsification test so it can actually fail. Name outcomes: tomatoes finishing below 15 beds would mean the labor penalty bites much earlier than you assumed. Mesclun reaching its 30-bed cap rather than your 24 would mean you underweighted how flat its 1.25% curve is.
+### One thing worth saying
+
+In the last round I said the hedging that cost you this stage reads as care, and that it was worth naming rather than letting the score speak for itself. You went and committed to a claim that can be proven wrong — and you kept the prediction that follows from your reasoning rather than switching to the one you guessed I wanted. That is the harder and better move.
+
+Your prompt log records the revision as its own session, which is exactly right: the fact that this brief has a before and an after is part of the record now, and Stage 3 can use it.
 
 ### Looking ahead to Stage 2
 
-Everything about how you work — the commit discipline, the AGENTS.md rule about not pushing without your review, the prompt log — is already at the level this course is trying to reach. Point that same discipline at the economics and this stage looks very different.
+The brief is frozen from here. If the model comes back well under 20 tomato beds, that gap is your Stage 3 material — do not edit this file to match it. Explaining why a 10% compounding rate bit harder than you expected is a better reflection than having guessed right.
 
 ---
 
