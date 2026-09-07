@@ -28,7 +28,7 @@ At 20 beds the crop needs 20 x 2.50 x 36 x 1.10^20, about 12,110 hours. The farm
 
 So there is a second question hiding under your prediction, and it is a different one from profitability: can 20 tomato beds be staffed at all? Working that out before the model runs would let you separate two ways of being wrong — the beds are not worth planting, versus the beds cannot be planted. Your falsification section currently treats both as the same outcome.
 
-### Stage 1.2 is due 11 september
+### Stage 1.2 is the next deliverable
 
 capabilities/marginal-analysis/ has no spec.md. Your prompt log has been kept properly all the way through and your commit history is the cleanest in the cohort, so the habits are there; the specification is a document you have not written yet.
 
