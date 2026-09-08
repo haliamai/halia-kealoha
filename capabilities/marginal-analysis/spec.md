@@ -4,7 +4,7 @@ capability: marginal-analysis
 engagement: perfect-competition
 date: 2026-09-07
 status: draft
-built_with: ""
+built_with: "Claude Code (openpyxl build, LibreOffice recalculation)"
 ---
 
 # Marginal Analysis — Model Specification
@@ -55,25 +55,32 @@ Revenue per Bed and Fertilizer Cost per Bed are full-season amounts and should n
 
 ## Calculation Logic
 
-- Crop Labor Hours(q) = q × Base Labor Hours per Week per Bed × Season Length × (1 + Diminishing-Returns Rate)^q.
+- TomatoLaborHours = TomatoBeds × Tom_BaseLabor × SeasonLength × (1 + Tom_DR)^TomatoBeds
+- CarrotLaborHours = CarrotBeds × Car_BaseLabor × SeasonLength × (1 + Car_DR)^CarrotBeds
+- MesclunLaborHours = MesclunBeds × Mes_BaseLabor × SeasonLength × (1 + Mes_DR)^MesclunBeds
+- For the standalone marginal-cost schedules, the same three formulas apply at each evaluated quantity q, with q substituted for TomatoBeds, CarrotBeds, or MesclunBeds respectively.
 - The diminishing-returns rate compounds based on the number of beds planted. It increases labor requirements and does not reduce revenue per bed.
-- Crop Revenue = Number of Beds × Revenue per Bed.
-- Total Revenue = Tomato Revenue + Carrot Revenue + Mesclun Revenue.
-- Crop Fertilizer Cost = Number of Beds × Fertilizer Cost per Bed.
-- Total Fertilizer Cost = Tomato Fertilizer Cost + Carrot Fertilizer Cost + Mesclun Fertilizer Cost.
-- Total Labor Required = Tomato Labor Hours + Carrot Labor Hours + Mesclun Labor Hours.
-- Farmer Hours Used = the lesser of Total Labor Required or Farmer Field Hours available.
-- Temporary Labor Hours Needed = the greater of Total Labor Required − Farmer Field Hours available or 0.
-- Temporary Workers Needed = the minimum whole number of temporary workers needed to provide sufficient temporary-labor capacity. Each temporary worker provides up to 1,440 hours, and no more than four temporary workers are available.
-- Total Labor Capacity = Farmer Field Hours + (Temporary Workers Needed × Temporary Worker Hours).
-- For the optimized crop mix, Total Labor Required must be less than or equal to Total Labor Capacity and cannot exceed the maximum possible farm labor capacity of 6,480 hours.
-- Farmer Labor Cost = Farmer Hours Used × Farmer Labor Rate.
-- Temporary Labor Cost = Temporary Labor Hours Needed × Temporary Labor Rate.
-- Total Labor Cost = Farmer Labor Cost + Temporary Labor Cost.
-- Blended Labor Rate = Total Labor Cost ÷ Total Labor Required. If Total Labor Required equals zero, the blended labor rate should be reported as zero to avoid a division-by-zero error.
-- Total Cost = Fixed Costs + Total Fertilizer Cost + Total Labor Cost.
-- Season Profit = Total Revenue − Total Cost.
-- Marginal Cost(q) = Total Cost(q) − Total Cost(q−1). At q = 0, Marginal Cost should be left blank because there is no prior quantity from which to calculate a change in Total Cost.
+- TomatoRevenue = TomatoBeds × Tom_Rev
+- CarrotRevenue = CarrotBeds × Car_Rev
+- MesclunRevenue = MesclunBeds × Mes_Rev
+- TotalRevenue = TomatoRevenue + CarrotRevenue + MesclunRevenue
+- TomatoFertilizerCost = TomatoBeds × Tom_Fert
+- CarrotFertilizerCost = CarrotBeds × Car_Fert
+- MesclunFertilizerCost = MesclunBeds × Mes_Fert
+- TotalFertilizerCost = TomatoFertilizerCost + CarrotFertilizerCost + MesclunFertilizerCost
+- TotalLaborRequired = TomatoLaborHours + CarrotLaborHours + MesclunLaborHours
+- FarmerHoursUsed = MIN(TotalLaborRequired, FarmerHours)
+- TempLaborHoursNeeded = MAX(TotalLaborRequired − FarmerHours, 0)
+- TempWorkersNeeded = the minimum whole number of temporary workers needed to provide sufficient temporary-labor capacity. Each temporary worker provides up to TempWorkerHours hours, and no more than MaxTempWorkers temporary workers are available.
+- TotalLaborCapacity = FarmerHours + (TempWorkersNeeded × TempWorkerHours)
+- For the optimized crop mix, TotalLaborRequired must be less than or equal to TotalLaborCapacity and cannot exceed MaxLaborCapacity.
+- FarmerLaborCost = FarmerHoursUsed × FarmerRate
+- TempLaborCost = TempLaborHoursNeeded × TempRate
+- TotalLaborCost = FarmerLaborCost + TempLaborCost
+- BlendedLaborRate = TotalLaborCost ÷ TotalLaborRequired. If TotalLaborRequired equals zero, BlendedLaborRate should be reported as zero to avoid a division-by-zero error.
+- TotalCost = FixedCosts + TotalFertilizerCost + TotalLaborCost
+- SeasonProfit = TotalRevenue − TotalCost
+- MarginalCost(q) = TotalCost(q) − TotalCost(q−1). At q = 0, MarginalCost should be left blank because there is no prior quantity from which to calculate a change in TotalCost. MarginalCost is evaluated per quantity q within each crop's standalone marginal-cost schedule; because it varies by q rather than naming one fixed cell, it is not represented as a single scalar named range in model.xlsx — each schedule's Total Cost and Marginal Cost columns remain ordinary row-by-row formulas built from the same named-range inputs listed above.
 
 ## Conventions
 
@@ -118,4 +125,14 @@ Revenue per Bed and Fertilizer Cost per Bed are full-season amounts and should n
 
 ## Audit Findings
 
-_To be completed after the model is built and audited._
+1. **Labor calculation check:** I manually checked tomato labor at q = 1 and got 99 hours, which matched the workbook. I also checked q = 10 and got approximately 2,334.37 hours. This confirmed that the 10% diminishing-returns rate is compounding as the number of beds increases rather than being applied only once.
+
+2. **Farm Profit Lab cross-check:** I compared the mesclun marginal-cost schedule in my workbook with the Farm Profit Lab. My workbook shows P ≈ MC at 6 beds, with marginal cost of about $2,667 compared with the $2,700 market price. The Farm Profit Lab also identifies P ≈ MC at 6 mesclun beds. This helped confirm that my marginal-cost schedule is behaving consistently with the independent reference model.
+
+3. **Solver starting-point check:** I ran Solver using GRG Nonlinear from both required starting points. From 0/0/0, Solver remained at 0/0/0, while starting from 20/0/0 produced 10 tomato, 20 carrot, and 30 mesclun beds. This showed that the Solver result is sensitive to its starting values and could otherwise allow a local solution to be mistaken for the best solution.
+
+4. **Solver constraint check:** During the manual Solver audit, I found that Excel for Mac would not accept the labor constraints when they referenced calculations on a different worksheet. Formula-driven helper cells were added to the Optimization sheet that link directly to the existing labor calculations. After this change, Solver accepted the full constraint set and all constraint checks remained TRUE. This caught an implementation issue that was not visible from reviewing the model outputs alone.
+
+5. **Published profit check:** The optimized crop mix matches the published solution of 10 tomato, 20 carrot, and 30 mesclun beds, but my workbook calculates season profit of approximately $42,775 instead of the published $42,762. I traced the revenue, fertilizer, labor, and fixed-cost calculations and confirmed that the workbook uses the values currently stated in the case and committed specification. The approximately $13 difference appears to result from rounding or additional precision in the reference calculation. I kept the published input values rather than changing them simply to force the check figure.
+
+**Additional observation for Stage 3:** The standalone tomato marginal-cost schedule shows a dip around q = 6. I noted the pattern during the audit but am leaving the economic explanation for the reporting stage.
