@@ -57,3 +57,21 @@
 **Use:** Used AI to generate model.xlsx from my committed spec.md, including the workbook structure, formulas, standalone marginal-cost schedules, optimization setup, outputs, and constraint checks. Used AI for implementation support when Excel for Mac would not accept cross-sheet Solver constraint references, to trace the small difference between the workbook's calculated profit and the published check figure, and to implement the required named ranges for existing calculated cells. No economic assumptions or model decisions were changed to force a result.
 
 **Verification:** Reviewed the workbook against my committed specification, ran Solver myself in Excel with the required constraints and starting points, independently checked the model results, and made the final audit judgments documented in spec.md.
+
+## September 8, 2026 — Stage 1.3 Perfect Competition Analysis and Decision Memo
+
+**Tool:** Claude Code
+
+**Purpose:** Prepare and refine the Stage 1.3 Perfect Competition analysis and decision memo from my own first drafts, and produce supporting figures from the existing Stage 1.2 workbook.
+
+**Use:** I wrote and committed my original analysis and my original decision memo before any AI editing took place. AI then performed a read-only structural review of both drafts against the Stage 1.3 requirements; I reviewed its recommendations and decided which changes to accept. AI made only the approved structural revisions, preserving my voice elsewhere. AI helped create two figures from the existing workbook data: a Tomato Marginal Cost vs. Price chart and an Optimal Bed Allocation vs. Crop Caps chart. We rejected an initial Carrot Marginal Cost vs. Price figure after the workbook revealed a mid-range marginal-cost pattern that could distract from the assignment's intended constraint discussion, and replaced it with the bed-allocation figure. AI embedded both approved figures into the analysis and performed a final read-only audit of the complete deliverable against the Stage 1.3 requirements.
+
+**Verification:** During the audit, AI identified alternative workbook-derived carrot and mesclun marginal-cost values that differed from Professor Stauffer's published Stage 1.3 figures. I chose to retain Professor Stauffer's published approximately $352 carrot and $246 mesclun figures for the Stage 1.3 report rather than replace them. I reviewed every AI-proposed change before approving it and made the final decisions on content, figures, and numbers throughout.
+
+## My Reflection
+
+AI supported me from the start, helping break down concepts and walk me through GitHub step by step. I know a lot of classmates struggled with that piece, but between Claude and ChatGPT I worked through the early issues. From there, AI helped me build the Excel model based on Stage 1.2 (I can't imagine how many hours that would've taken manually) and troubleshoot Solver on Excel for Mac, especially a tricky cross-sheet constraint issue. It also gave me structural feedback throughout, helping me spot where my reasoning needed more support.
+
+This project was also a good reminder that AI needs to be checked too. One clear example: the assignment listed $352 additional value for a carrot bed and $246 for a mesclun bed, but Claude calculated $405.63 and $280 from the workbook and wanted me to "correct" my analysis to match. After checking the actual assignment instructions, I didn't make that change. Similarly, Claude interpreted the four-worker limit as binding, when the instructions actually frame that constraint as slack and not worth relaxing. I went with the intended interpretation instead. It was a good reminder that AI can misread context, not unlike people can.
+
+Throughout, I compared AI's output against the live assignment instructions, used the Farm Profit Lab as an independent check, ran hand calculations, and tested Solver myself from different starting points more than once. I reviewed every proposed edit before approving it (I learned the hard way that being one number off throws everything) and compared the final model against my original hypothesis, which was proven wrong. I also kept my original drafts preserved in Git and updated my prompt log along the way.
