@@ -6,7 +6,7 @@ I recommend planting 10 tomato beds, 20 carrot beds, and 30 mesclun beds because
 
 ## Management Priority
 
-If I could change one constraint, I would increase the carrot cap first. Carrots are already at their maximum of 20 beds, but an additional carrot bed could add about $352 in profit compared with about $246 for an additional mesclun bed. Tomatoes would not be the priority because the model already shows that planting beyond 10 tomato beds would not be profitable based on marginal cost.
+If I could change one constraint, I would increase the carrot cap first. Carrots are already at their maximum of 20 beds, but an additional carrot bed could add about $352 in profit compared with about $246 for an additional mesclun bed. Tomatoes would not be the priority because the model already shows that planting beyond 10 tomato beds would not be profitable based on marginal cost. The 64-bed limit and the 4-temp-worker limit are not worth relaxing either, since the current plan has room within both of them.
 
 ## What Could Change My Recommendation
 
