@@ -23,10 +23,10 @@ Ultimately, the model should answer: With 64 beds available, what combination of
 | Season Length | 36 | weeks | Perfect Competition Case |
 | Fixed Costs | $20,000 | dollars/season | Perfect Competition Case |
 | Farmer Field Hours | 720 | hours/season | Perfect Competition Case |
-| Farmer Labor Rate | $34.72 | dollars/hour | Perfect Competition Case |
+| Farmer Labor Rate | $50,000 / 1,440 = $34.7222 | dollars/hour | Perfect Competition Case |
 | Maximum Temporary Workers | 4 | workers | Perfect Competition Case |
 | Temporary Worker Hours | 1,440 | hours/worker/season | Perfect Competition Case |
-| Temporary Labor Rate | $17.36 | dollars/hour | Perfect Competition Case |
+| Temporary Labor Rate | $25,000 / 1,440 = $17.3611 | dollars/hour | Perfect Competition Case |
 | Tomato Bed Limit | 20 | beds | Perfect Competition Case |
 | Tomato Revenue per Bed | $8,800 | dollars/bed/season | Perfect Competition Case |
 | Tomato Base Labor | 2.5 | hours/week/bed | Perfect Competition Case |
@@ -34,7 +34,7 @@ Ultimately, the model should answer: With 64 beds available, what combination of
 | Tomato Diminishing-Returns Rate | 10% | per additional bed | Perfect Competition Case |
 | Carrot Bed Limit | 20 | beds | Perfect Competition Case |
 | Carrot Revenue per Bed | $2,094 | dollars/bed/season | Perfect Competition Case |
-| Carrot Base Labor | 0.833 | hours/week/bed | Perfect Competition Case |
+| Carrot Base Labor | 2.5 / 3 = 0.8333 | hours/week/bed | Perfect Competition Case |
 | Carrot Fertilizer Cost | $440 | dollars/bed/season | Perfect Competition Case |
 | Carrot Diminishing-Returns Rate | 2.5% | per additional bed | Perfect Competition Case |
 | Mesclun Bed Limit | 30 | beds | Perfect Competition Case |
@@ -51,7 +51,12 @@ Revenue per Bed and Fertilizer Cost per Bed are full-season amounts and should n
 - **Cost Structure:** Calculates the farm’s major costs, including fertilizer, farmer labor, temporary labor, and fixed costs, based on the selected crop mix.
 - **Marginal-Cost Schedules:** Shows the labor requirement, costs, and marginal cost at each possible quantity for tomatoes, carrots, and mesclun so the cost of adding another bed can be evaluated. Each crop is analyzed independently in its standalone schedule.
 - **Optimization:** Uses the whole-number quantities of tomato, carrot, and mesclun beds as the decision variables and uses Solver with the GRG Nonlinear method to maximize season profit. Decision variables must be nonnegative integers and must satisfy the crop-specific bed limits, total bed capacity of 64, maximum of four temporary workers, and available labor capacity.
-- **Checks:** Provides visible pass/fail checks showing whether the optimized crop mix stays within the farm’s total-bed, crop-specific, temporary-worker, and labor-capacity constraints.
+- **Checks:** Provides visible pass/fail checks showing whether the optimized crop mix stays within the farm’s total-bed, crop-specific, temporary-worker, and labor-capacity constraints. The Checks sheet should include formula-based acceptance tests to confirm that the model is calculating correctly. These checks should include:
+  - q=1 tomato labor = 99 hours
+  - q=10 tomato labor ≈ 2,334.37 hours
+  - optimal allocation = 10 tomatoes / 20 carrots / 30 mesclun
+  - season profit ≈ $42,762
+  - expected P≈MC crossings for tomatoes, carrots, and mesclun
 
 ## Calculation Logic
 
@@ -72,6 +77,7 @@ Revenue per Bed and Fertilizer Cost per Bed are full-season amounts and should n
 - FarmerHoursUsed = MIN(TotalLaborRequired, FarmerHours)
 - TempLaborHoursNeeded = MAX(TotalLaborRequired − FarmerHours, 0)
 - TempWorkersNeeded = the minimum whole number of temporary workers needed to provide sufficient temporary-labor capacity. Each temporary worker provides up to TempWorkerHours hours, and no more than MaxTempWorkers temporary workers are available.
+- Temp worker-equivalent usage = TempLaborHoursNeeded / TempWorkerHours. This shows the amount of temporary labor capacity being used without rounding. The number of workers that would actually need to be hired should be calculated separately by rounding the worker-equivalent usage up to the nearest whole worker.
 - TotalLaborCapacity = FarmerHours + (TempWorkersNeeded × TempWorkerHours)
 - For the optimized crop mix, TotalLaborRequired must be less than or equal to TotalLaborCapacity and cannot exceed MaxLaborCapacity.
 - FarmerLaborCost = FarmerHoursUsed × FarmerRate
@@ -133,6 +139,6 @@ Revenue per Bed and Fertilizer Cost per Bed are full-season amounts and should n
 
 4. **Solver constraint check:** During the manual Solver audit, I found that Excel for Mac would not accept the labor constraints when they referenced calculations on a different worksheet. Formula-driven helper cells were added to the Optimization sheet that link directly to the existing labor calculations. After this change, Solver accepted the full constraint set and all constraint checks remained TRUE. This caught an implementation issue that was not visible from reviewing the model outputs alone.
 
-5. **Published profit check:** The optimized crop mix matches the published solution of 10 tomato, 20 carrot, and 30 mesclun beds, but my workbook calculates season profit of approximately $42,775 instead of the published $42,762. I traced the revenue, fertilizer, labor, and fixed-cost calculations and confirmed that the workbook uses the values currently stated in the case and committed specification. The approximately $13 difference appears to result from rounding or additional precision in the reference calculation. I kept the published input values rather than changing them simply to force the check figure.
+5. **Published profit discrepancy:** My original model calculated approximately $42,775 compared with the published result of approximately $42,762. I initially kept the provided inputs rather than changing them just to force the model to match the published answer. Based on Professor Stauffer's feedback, I learned that the difference came from using the rounded values displayed in the case instead of the underlying calculations. Using $50,000 / 1,440 for the farmer labor rate, $25,000 / 1,440 for the temporary labor rate, and 2.5 / 3 for carrot labor resolves the discrepancy and produces profit of approximately $42,762.
 
 **Additional observation for Stage 3:** The standalone tomato marginal-cost schedule shows a dip around q = 6. I noted the pattern during the audit but am leaving the economic explanation for the reporting stage.
