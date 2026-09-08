@@ -8,11 +8,15 @@ Tomatoes bring in $8,800 per bed, and that's the number every other bed gets com
 
 Both carrots and mesclun are maxed out, carrots at 20 of 20 beds and mesclun at 30 of 30, so these are the caps actually limiting the plan. At bed 20, carrot marginal cost is about $1,742, still about $352 below its $2,094 price, meaning there's real value trapped behind the limit. Mesclun only has about $246 of value left at its cap. Since carrots have more value trapped behind the limit than mesclun does, loosening the carrot cap would help more. As for the other two potential constraints, total beds at 64 aren't binding, we have room there. Temp workers aren't worth relaxing either, we already have all 4 we'd need and there's slack left in the hours, so a fifth worker wouldn't change anything. Neither constraint is worth prioritizing.
 
-*[FIGURE 2 PLACEHOLDER: Carrot Marginal Cost vs. Price chart — shows the binding cap at bed 20 and the value still trapped behind it]*
+![Optimal Bed Allocation vs. Crop Caps](figures/optimal-bed-allocation-vs-caps.png)
+
+*Figure 1. Optimal bed allocation compared with each crop's maximum bed cap.*
 
 Farmer labor costs $34.72 an hour, temp labor costs $17.36 an hour. Around bed 6, the marginal labor being used shifts more toward the cheaper temp workers, and that wage difference is big enough to actually pull marginal cost down for a bit. But that's temporary, because labor requirements are compounding at 10 percent per bed. Eventually that growth outpaces the savings from cheaper labor, and marginal cost starts climbing again. That's what causes the dip in the curve.
 
-*[FIGURE 1 PLACEHOLDER: Tomato Marginal Cost vs. Price chart — shows the P ≈ MC crossing around bed 10 and the labor-driven dip in the curve]*
+![Tomato Marginal Cost vs. Price](figures/tomato-mc-vs-price.png)
+
+*Figure 2. Tomato marginal cost compared with the $8,800 market price per bed.*
 
 Here's the piece that needed sharpening. Each crop looks unprofitable if you compare it against the full $20,000 fixed cost, but that cost gets paid no matter what we plant, so it's not the right comparison. The real question is whether price covers average variable cost. When price is above AVC, the crop is paying for all its own variable costs and still has something left over to put toward that unavoidable fixed cost, so it's worth growing even if it looks like a loss on paper. In this model, price does cover AVC for carrots and mesclun, which is why planting them still makes sense even though neither one looks profitable standalone.
 
