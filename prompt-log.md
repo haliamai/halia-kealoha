@@ -47,3 +47,13 @@
 **Use:** Used AI to clarify the feedback on the problem statement and economic mechanism and to review how the 10% increase in tomato labor compounds across additional beds.
 
 **Verification:** Reviewed the revisions against Professor Stauffer’s feedback. I expanded the problem statement and added more detail about how quickly tomato labor increases while keeping my original 20/20/24 prediction and my original definition of what would prove my prediction wrong.
+
+## September 7, 2026 — Stage 1.2 Marginal Analysis Model Build & Implementation Support
+
+**Tool:** Claude Code
+
+**Purpose:** Build and troubleshoot the Stage 1.2 marginal-analysis workbook from my already-committed specification.
+
+**Use:** Used AI to generate model.xlsx from my committed spec.md, including the workbook structure, formulas, standalone marginal-cost schedules, optimization setup, outputs, and constraint checks. Used AI for implementation support when Excel for Mac would not accept cross-sheet Solver constraint references, to trace the small difference between the workbook's calculated profit and the published check figure, and to implement the required named ranges for existing calculated cells. No economic assumptions or model decisions were changed to force a result.
+
+**Verification:** Reviewed the workbook against my committed specification, ran Solver myself in Excel with the required constraints and starting points, independently checked the model results, and made the final audit judgments documented in spec.md.
