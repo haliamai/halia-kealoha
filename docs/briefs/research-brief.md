@@ -11,15 +11,11 @@ hypothesis: I expect Hawaiʻi's public investment in geothermal resource charact
 
 ## The Problem
 
-Hawaiʻi is working toward a goal of 100% renewable electricity by 2045, but we still do not fully understand the geothermal resources that exist across the state. In 2024, Governor Green allocated $5 million for geothermal resource characterization, including slim-hole drilling, to better understand where viable geothermal resources may exist. This makes the question of whether government should take on some of the financial risk of geothermal exploration a current economic decision, rather than just a general energy policy question.
+Hawaiʻi is working toward a goal of 100% renewable electricity by 2045, but we still do not fully understand the geothermal resources that exist across the state. In 2024, Governor Green allocated $5 million for geothermal resource characterization, including slim-hole drilling, making the question of whether government should take on some of the financial risk of geothermal exploration a current economic decision rather than a general energy-policy one.
 
-Geothermal exploration requires significant upfront investment before a developer knows whether a commercially viable resource exists. That uncertainty creates financial risk and may discourage investment. I want to explore whether Hawaiʻi's use of public funds to reduce that uncertainty creates enough economic value to justify the cost.
+Geothermal exploration requires significant upfront investment before a developer knows whether a commercially viable resource exists, and that uncertainty creates financial risk that may discourage investment. I want to explore whether Hawaiʻi's $5 million investment reduces that uncertainty enough to create economic value that justifies its cost — and, as a Native Hawaiian from Hawaiʻi Island, who ultimately bears the costs and captures the benefits if it does.
 
-I am especially interested in this question as a Native Hawaiian from Hawaiʻi Island. For me, the economic question is not only whether public investment makes geothermal development less risky, but also who bears the costs and who ultimately receives the benefits when public money is used to better understand and potentially develop Hawaiʻi's geothermal resources. I am particularly interested in whether the economic value created remains in Hawaiʻi and benefits Native Hawaiians and the communities where geothermal resources are developed.
-
-The economic concepts I expect to explore include risk and uncertainty, incentives, opportunity cost, externalities, market failure, and public versus private costs and benefits.
-
-My analysis will use Hawaiʻi's $5 million resource-characterization investment as a real-world case and examine whether reducing exploration uncertainty creates enough economic value to justify the public cost. If the available data support it, I will use a break-even or sensitivity analysis to identify how much exploration risk would need to be reduced for the investment to be economically justified. I will also consider who is positioned to capture the economic value created if geothermal development moves forward.
+The economic concepts I expect to explore include risk and uncertainty, incentives, opportunity cost, externalities, market failure, and public versus private costs and benefits. If the available data support it, I will use a break-even or sensitivity analysis to estimate how much exploration risk the investment would need to reduce to be economically justified, and consider who is positioned to capture the resulting value.
 
 ## What I Am Assuming
 
@@ -37,6 +33,10 @@ However, I expect the strength of that economic case to depend not only on the a
 
 ## How I Would Know I Was Wrong
 
-I would reconsider my hypothesis if the evidence shows that publicly funded resource characterization does not meaningfully reduce exploration uncertainty or that private developers already have sufficient incentives and information to take on that risk without public support.
+I would reconsider my hypothesis if the evidence shows any of the following:
 
-I would also reconsider it if the expected economic benefits of reducing exploration risk are too limited or uncertain to justify the opportunity cost of Hawaiʻi's $5 million public investment.
+- Resource characterization provides little additional information about commercially viable geothermal resources.
+- The reduction in exploration risk is not sufficient to justify the $5 million public cost under reasonable assumptions.
+- Private developers already have sufficient incentives to fund comparable resource characterization without public support.
+- Most of the measurable economic value created by the investment is captured privately, with limited public or community benefit.
+- Significant costs or negative externalities borne by Native Hawaiians or host communities outweigh the broader public benefits identified.
