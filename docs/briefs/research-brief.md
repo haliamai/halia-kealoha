@@ -11,11 +11,13 @@ hypothesis: I expect Hawaiʻi's public investment in geothermal resource charact
 
 ## The Problem
 
-Hawaiʻi is working toward a goal of 100% renewable electricity by 2045, but we still do not fully understand the geothermal resources that exist across the state. In 2024, Governor Green allocated $5 million for geothermal resource characterization, including slim-hole drilling, making the question of whether government should take on some of the financial risk of geothermal exploration a current economic decision rather than a general energy-policy one.
+Hawaiʻi is working toward a goal of 100% renewable electricity by 2045, but we still do not fully understand the geothermal resources that exist across the state. In 2024, Governor Josh Green allocated $5 million in federal Coronavirus State Fiscal Recovery Fund money for geothermal resource characterization, including slim-hole drilling. More recent legislative activity has considered establishing or continuing state funding for underground energy resource characterization, making the Hawaiʻi State Legislature a relevant decision-maker for whether and under what conditions this work should continue.
 
-Geothermal exploration requires significant upfront investment before a developer knows whether a commercially viable resource exists, and that uncertainty creates financial risk that may discourage investment. I want to explore whether Hawaiʻi's $5 million investment reduces that uncertainty enough to create economic value that justifies its cost — and, as a Native Hawaiian from Hawaiʻi Island, who ultimately bears the costs and captures the benefits if it does.
+Geothermal exploration requires significant upfront investment before a developer knows whether a commercially viable resource exists, and that uncertainty creates financial risk that may discourage investment. Rather than assume that risk alone justifies public funding, I want to test whether private developers already have sufficient incentive to fund comparable characterization themselves — in which case public funding would function as a subsidy rather than a correction — and whether the resulting information is accessible enough to create value beyond whichever developer uses it first. If public funding does create economic value, the second question is who ultimately captures it: the public, private developers, Native Hawaiians, or host communities. As a Native Hawaiian from Hawaiʻi Island, that second question is especially important to me, without assuming in advance that redistribution or Native Hawaiian ownership is the right answer. These two questions — the information/incentive problem and who captures the resulting value — are the paper's central concepts; opportunity cost and externalities enter only where they bear directly on them.
 
-The economic concepts I expect to explore include risk and uncertainty, incentives, opportunity cost, externalities, market failure, and public versus private costs and benefits. If the available data support it, I will use a break-even or sensitivity analysis to estimate how much exploration risk the investment would need to reduce to be economically justified, and consider who is positioned to capture the resulting value.
+Because I have not found a defensible Hawaiʻi-specific estimate of how much characterization changes the probability of successful development, I plan to use a stated-assumption sensitivity analysis rather than a precise empirical break-even estimate. The analysis will test how much the probability of successful development would need to improve for the $5 million investment to break even under different assumptions about the public economic value of a successful outcome, rather than treating total project value or private developer returns as public benefits. The resulting chart will show what would have to be true for the investment to pay off without claiming that the actual probability improvement is known.
+
+My research will rely on primary sources — HSEO and DBEDT program materials, Hawaiʻi legislative bill and hearing records, and state and federal geothermal resource assessments — rather than news coverage.
 
 ## What I Am Assuming
 
@@ -36,7 +38,8 @@ However, I expect the strength of that economic case to depend not only on the a
 I would reconsider my hypothesis if the evidence shows any of the following:
 
 - Resource characterization provides little additional information about commercially viable geothermal resources.
-- The reduction in exploration risk is not sufficient to justify the $5 million public cost under reasonable assumptions.
+- The resulting characterization information is not made broadly accessible, so it fails to create value beyond whichever developer uses it first.
 - Private developers already have sufficient incentives to fund comparable resource characterization without public support.
+- The improvement in probability of successful development required to break even is implausibly large under reasonable assumptions about public value.
 - Most of the measurable economic value created by the investment is captured privately, with limited public or community benefit.
 - Significant costs or negative externalities borne by Native Hawaiians or host communities outweigh the broader public benefits identified.
