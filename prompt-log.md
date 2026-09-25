@@ -98,6 +98,16 @@
 
 **Verification:** Reviewed AI's formula extension against the workbook's own labor and cost formulas before accepting the $1,741.51 and $2,453.53 figures, rather than taking the match on faith. Checked the exact before/after wording for the analysis and memo, confirmed the added dip sentence didn't touch any previously cited cell values, and re-counted the trimmed reflection myself to confirm it stayed under 300 words while keeping the required content and my own wording. Confirmed no model formulas, the hypothesis section, and no previously professor-approved passages were changed.
 
+## September 25, 2026 — Geothermal Research Step 1: Source Verification
+
+**Tool:** Claude Code
+
+**Purpose:** Document Research Step 1 from `capabilities/economic-research/spec.md` — verifying the $5 million geothermal characterization allocation (`C`) against primary sources, per Professor Stauffer's instruction to source, verify, build, and recommend in sequence.
+
+**Use:** I found and read the two primary sources myself — Hawaiʻi State Energy Office testimony before the Senate Committee on Energy and Intergovernmental Affairs (SCR 136, March 25, 2025) and a University of Hawaiʻi Office of Research Services award record (BOR Consolidated Q1 FY2025) — and gave AI the confirmed content, URLs, and retrieval dates to record. Used AI to add `scratch/` to `.gitignore` before any provisional files were created, create `data/sources.md` as the master provenance log, and update the spec's Data Sources table, `C` definition, and Research Log to mark `C = $5,000,000` verified. AI attempted to preserve raw copies of both PDFs in `data/raw/`, but downloading was unavailable in this environment, so `data/raw/` was not created; the sources were independently re-verified against the official URLs instead.
+
+**Verification:** I read both source documents directly before giving AI their content — the testimony's $5 million/2024/Coronavirus State Fiscal Recovery Fund/Governor Green claims and the UH award record's matching $5,000,000 slim-hole characterization grant are both my own reading, not AI-generated. Reviewed the exact spec and `data/sources.md` wording before approving, confirming both sources as independently verified and noting that raw copies were not preserved locally only because downloading was unavailable in this environment.
+
 ## My Reflection
 
 AI supported me from the start, helping break down concepts and walk me through GitHub step by step, and between Claude and ChatGPT I worked through the early issues. From there, AI helped me build the Excel model based on Stage 1.2 (I can't imagine how many hours that would've taken manually) and troubleshoot Solver on Excel for Mac, especially a tricky cross-sheet constraint issue. It also gave me structural feedback throughout, helping me spot where my reasoning needed more support.

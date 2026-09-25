@@ -3,3 +3,6 @@
 
 # macOS system files
 .DS_Store
+
+# Throwaway/provisional work — never the final evidence trail
+scratch/

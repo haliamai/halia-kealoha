@@ -18,7 +18,7 @@ Every row below is a research requirement, not a finding. Status starts at **Pen
 
 | # | Item | Status | Source | Retrieval Date | Notes |
 |---|---|---|---|---|---|
-| 1 | $5 million allocation amount and fund | Pending | TBD | TBD | Must confirm exact amount and that it is federal Coronavirus State Fiscal Recovery Fund money, per HSEO materials cited in the brief. Do not use in the model until sourced. |
+| 1 | $5 million allocation amount and fund | Verified | Hawaiʻi State Energy Office — Testimony of Mark B. Glick before the Senate Committee on Energy and Intergovernmental Affairs re: SCR 136 (Mar. 25, 2025); corroborated by University of Hawaiʻi Office of Research Services, BOR Consolidated Q1 FY2025 | 2026-09-25 | Confirms $5,000,000 from the Coronavirus State Fiscal Recovery Fund, allocated in 2024 by Governor Josh Green, for slim-hole geothermal resource characterization; corroborated by a matching $5,000,000 HSEO-sponsored UH award for the same purpose. Full citations in `data/sources.md`. |
 | 2 | Program purpose / use of funds | Pending | TBD | TBD | What the allocation is authorized to be spent on (e.g., slim-hole drilling, resource characterization scope). |
 | 3 | Legislative activity concerning continuation/future funding | Pending | TBD | TBD | Bill text, committee reports, testimony, or hearing records establishing that the Legislature is a live decision-maker for continued funding. Do not overstate as enacted law. |
 | 4 | Geothermal resource characterization / resource evidence | Pending | TBD | TBD | UH/state geothermal resource assessments; USGS or comparable federal assessments where relevant. |
@@ -52,7 +52,7 @@ Expected public net value = Δp × V_public − C
 Break-even Δp* = C / V_public
 ```
 
-- `C` — the public cost of the program. Expected to be $5,000,000 based on the brief, but this figure is a claim requiring primary-source verification (Data Sources row 1) before it is used in the model. Do not use an unverified figure in any calculation or figure.
+- `C` — the public cost of the program. Verified at $5,000,000 (Data Sources row 1; full citations in `data/sources.md`), sourced to Hawaiʻi State Energy Office testimony and corroborated by a matching University of Hawaiʻi award record. May now be used in the model.
 - `Δp` — an assumed improvement in the probability of successful commercial development attributable to characterization. This is not empirically known from research completed so far. It must remain an explicit, stated assumption varied across the sensitivity analysis unless a genuinely defensible estimate is found (Data Sources row 9). A comparable-jurisdiction proxy is not a default substitute and requires explicit justification and approval before use.
 - `V_public` — the public economic value of a successful development outcome. This explicitly excludes total project value and private developer return. Its components are not defined or invented in this spec; identifying defensible components, sourcing them, and avoiding double-counting across them is a research task (Section 3, task 6; Data Sources row 7).
 
@@ -102,6 +102,8 @@ The final paper is four pages maximum, excluding title page, graphs, bibliograph
 Dated entries recording what was actually found or not found during research, including honest gaps — not a place to record conclusions in advance of the evidence.
 
 **2026-09-25 — Spec established.** This spec was written before full research execution, consistent with the course workflow and Professor Stauffer's latest instructions to source, verify, build, and recommend in sequence. Key unresolved empirical items at this point: `C` (the $5 million figure) is unverified against a primary source; `V_public`'s components are undefined and unsourced; whether a defensible `Δp` estimate exists anywhere is unknown. No data has been pulled and no sources have been retrieved as of this entry.
+
+**2026-09-25 — `C` verified (Research Step 1 complete).** `C = $5,000,000` is now verified against two independent primary sources: Hawaiʻi State Energy Office testimony (Mar. 25, 2025, re: SCR 136) confirming a 2024 allocation from the Coronavirus State Fiscal Recovery Fund for slim-hole geothermal resource characterization, allocated by Governor Josh Green; and a corroborating University of Hawaiʻi Office of Research Services award record (BOR Consolidated Q1 FY2025) showing a matching $5,000,000 HSEO-sponsored award to the UH Hawaiʻi Institute of Geophysics and Planetology for slim-hole subsurface/resource characterization. Both sources and retrieval dates are recorded in `data/sources.md`. Both sources have been independently re-verified against the official URLs listed in `data/sources.md`. Raw copies of both PDFs are not preserved locally, because downloading was unavailable in this environment. `Δp`, `V_public`, the figure, and the recommendation remain unresolved and are not addressed by this entry.
 
 ---
 
