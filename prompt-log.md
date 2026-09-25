@@ -108,6 +108,16 @@
 
 **Verification:** I read both source documents directly before giving AI their content — the testimony's $5 million/2024/Coronavirus State Fiscal Recovery Fund/Governor Green claims and the UH award record's matching $5,000,000 slim-hole characterization grant are both my own reading, not AI-generated. Reviewed the exact spec and `data/sources.md` wording before approving, confirming both sources as independently verified and noting that raw copies were not preserved locally only because downloading was unavailable in this environment.
 
+## September 25, 2026 — Geothermal Research Step 2: Accessibility Evidence
+
+**Tool:** Claude Code
+
+**Purpose:** Investigate Research Step 2 from `capabilities/economic-research/spec.md` — whether the current $5M program's publicly funded geothermal characterization information is broadly accessible and useful beyond the first/private developer (Data Sources row 6).
+
+**Use:** AI used WebSearch (available in this session even though direct fetches to `.hawaii.gov`/`.hawaii.edu` domains are blocked) to locate candidate primary sources: DBEDT's Non-General Fund Report language on "data analysis and publication," HSEO's geothermal program page, SB 3081's legislative status, and general HGGRC public-data infrastructure. AI was explicit that WebSearch snippets are not the same as reading full source documents directly and flagged which claims remained unconfirmed rather than treating them as settled. AI helped locate, inspect, and cross-check the strongest candidate sources — the DBEDT report's exact measure language, the current-project Statement of Work (via a third-party UIPA-hosted package), HSEO's page content, and SB 3081's legislative status — and I reviewed the evidence and exact claims before approving their use in the spec and source log. AI updated the spec's Data Sources rows 3 and 6, added corresponding entries to `data/sources.md`, and logged the Step 2 conclusion as Partially Supported rather than upgrading it to Verified, keeping legislative-intent evidence (SB 3081), institutional-precedent evidence (older HGGRC/Play Fairway infrastructure), and project-timing evidence (drilling schedule) clearly separated from direct current-program evidence, per my instructions.
+
+**Verification:** AI helped locate and inspect the DBEDT report, the SOW document, the HSEO page, and the SB 3081 status; I reviewed the evidence and each exact claim before approving what went into the spec and `data/sources.md`, rather than accepting AI's synthesis at face value. In particular, I confirmed the SOW is used only for project-identity corroboration, since its publication/data-release clause was not verified, and confirmed SB 3081 is described as not enacted as of the retrieval date rather than as governing the current program.
+
 ## My Reflection
 
 AI supported me from the start, helping break down concepts and walk me through GitHub step by step, and between Claude and ChatGPT I worked through the early issues. From there, AI helped me build the Excel model based on Stage 1.2 (I can't imagine how many hours that would've taken manually) and troubleshoot Solver on Excel for Mac, especially a tricky cross-sheet constraint issue. It also gave me structural feedback throughout, helping me spot where my reasoning needed more support.
