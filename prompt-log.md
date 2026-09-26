@@ -118,6 +118,16 @@
 
 **Verification:** AI helped locate and inspect the DBEDT report, the SOW document, the HSEO page, and the SB 3081 status; I reviewed the evidence and each exact claim before approving what went into the spec and `data/sources.md`, rather than accepting AI's synthesis at face value. In particular, I confirmed the SOW is used only for project-identity corroboration, since its publication/data-release clause was not verified, and confirmed SB 3081 is described as not enacted as of the retrieval date rather than as governing the current program.
 
+## September 26, 2026 — Geothermal Research Step 3: `V_public` Components
+
+**Tool:** Claude Code
+
+**Purpose:** Investigate Research Step 3 from `capabilities/economic-research/spec.md` — identifying defensible categories of public economic value (`V_public`) for the sensitivity-analysis framework (Data Sources row 7), following up specifically on whether royalty revenue is usable as a base case.
+
+**Use:** AI used WebSearch to research Hawaiʻi's geothermal royalty statutes (HRS §182-7, §182-18) and implementing rule (HAR §13-183-31), the one operating Hawaiʻi precedent (Puna Geothermal Venture's lease/royalty arrangement), the PUC avoided-cost framework, a Hawaiʻi-specific social-cost-of-carbon study (UHERO/HSEO, Act 122 SLH 2019), and HSEO/DBEDT testimony on energy-security value. AI identified a material discrepancy between the administrative rule's nominal 10–20% royalty range and the ~3% actually observed in PGV's arrangement, and flagged that BLNR's separate rate-setting/waiver authority under HRS §182-7 and §182-18 (including an up-to-eight-year full waiver) is not fully reconciled with the 10–20% rule. AI updated the spec's Data Sources row 7 to Partially Supported, added four new source-log entries, and logged the Step 3 conclusion, preserving the unresolved items (statutory interaction, land tenure, future plant assumptions, OHA/DHHL distribution) rather than resolving them by assumption.
+
+**Verification:** AI-assisted cross-checking was used to pressure-test the major leads before I approved their characterization, and I specifically caught and corrected AI's initial "statutory ceiling"/"statutory range" framing of the 10–20% figure, since that overstated what the evidence actually establishes — HAR §13-183-31 sets that range, but separate BLNR rate-setting/waiver statutes exist whose interaction with it is unresolved. AI has not independently re-verified the primary statutory text or the PGV ~3%/land-tenure details beyond WebSearch synthesis; I reviewed the exact wording recorded in the spec and `data/sources.md` and confirmed it preserves that limitation honestly rather than presenting WebSearch-derived findings as fully confirmed.
+
 ## My Reflection
 
 AI supported me from the start, helping break down concepts and walk me through GitHub step by step, and between Claude and ChatGPT I worked through the early issues. From there, AI helped me build the Excel model based on Stage 1.2 (I can't imagine how many hours that would've taken manually) and troubleshoot Solver on Excel for Mac, especially a tricky cross-sheet constraint issue. It also gave me structural feedback throughout, helping me spot where my reasoning needed more support.
