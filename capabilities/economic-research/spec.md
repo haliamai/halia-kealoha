@@ -58,16 +58,48 @@ Break-even Δp* = C / V_public
 
 This is a stated-assumption sensitivity analysis, not a precise empirical break-even estimate. The model's job is to show what would have to be true for the investment to break even, not to claim the actual probability improvement is known.
 
+**Locked sensitivity design (2026-09-27, no new research).** With `C` verified and the `V_public`/`Δp` research tasks in Section 3 completed as far as available evidence allows (Data Sources rows 7 and 9), the following illustrative sensitivity scenarios are locked for the figure and paper. These are stated assumptions chosen to make the break-even relationship transparent, not empirical estimates:
+
+- `C = $5,000,000` (verified, Data Sources row 1).
+- Illustrative `V_public` sensitivity scenarios: $10,000,000; $25,000,000; $50,000,000; $100,000,000. These are illustrative sensitivity scenarios, not empirical estimates of the value of a future Maui geothermal project, and they do not imply any particular plant capacity, generation level, or project scale (Data Sources row 4).
+- Illustrative `Δp` sensitivity assumptions: 1%, 5%, 10%, 20%, 50%. These are illustrative sensitivity assumptions, not empirically observed effects of characterization (Data Sources row 9).
+- A $5,000,000 `V_public` scenario was considered and excluded: its break-even threshold (`Δp* = 100%`) sits at an extreme boundary case that adds little analytical value and unnecessarily expands the sensitivity range. This is not read as characterization "guaranteeing success outright"; it is simply outside the range of assumptions used for this analysis.
+
+Break-even thresholds (`Δp* = C / V_public`):
+
+| `V_public` | `Δp*` |
+|---|---|
+| $10,000,000 | 50% |
+| $25,000,000 | 20% |
+| $50,000,000 | 10% |
+| $100,000,000 | 5% |
+
+Net expected public value (`Net expected public value = (Δp × V_public) − C`):
+
+| `Δp` \ `V_public` | $10M | $25M | $50M | $100M |
+|---|---|---|---|---|
+| 1% | ($4,900,000) | ($4,750,000) | ($4,500,000) | ($4,000,000) |
+| 5% | ($4,500,000) | ($3,750,000) | ($2,500,000) | **$0 (break-even)** |
+| 10% | ($4,000,000) | ($2,500,000) | **$0 (break-even)** | $5,000,000 |
+| 20% | ($3,000,000) | **$0 (break-even)** | $5,000,000 | $15,000,000 |
+| 50% | **$0 (break-even)** | $7,500,000 | $20,000,000 | $45,000,000 |
+
+Negative values (in parentheses) indicate the assumed combination falls below break-even; $0 indicates exact break-even; positive values indicate the assumed combination clears break-even. A positive net expected public value means only that the assumed combination passes this narrow expected-public-value test — it does not establish that the assumptions are likely, or that additional public funding should be approved.
+
+Plain-English interpretation: I can't defend one precise number for how much characterization actually improves the odds that a Maui geothermal project gets built, or one precise number for how much public value a successful project would create. So instead of pretending those numbers are known, I test a range of assumptions for both and see where the $5 million investment breaks even. The analysis is really just answering one question: what combination of public value and probability improvement would have to be true for this spending to pay for itself. It doesn't tell us whether that combination is likely, only what would need to hold.
+
 ## 5. Figure Specification
 
-One figure, required by the assignment and by Professor Stauffer's feedback, built from whatever survives the research tasks in Section 3:
+One figure, required by the assignment and by Professor Stauffer's feedback. Design locked 2026-09-27 (see the sensitivity design in Section 4):
 
-- **X-axis:** assumed improvement in probability of successful commercial development (`Δp`).
-- **Y-axis:** expected public net value of the investment (`Δp × V_public − C`).
-- **Reference line/point:** the zero/break-even crossing.
-- **Multiple curves:** lower, base, and higher defensible assumed values of `V_public`, each producing its own break-even point.
-- **Assumptions visible:** every assumed value used (for `C`, `V_public` scenarios, and any `Δp` range) must be stated on the chart or in its caption, not left implicit.
-- The chart's purpose is to show what would have to be true for the public investment to pay off — it must not imply that the actual probability improvement is known.
+- **X-axis:** `V_public` (illustrative sensitivity scenario, dollar value).
+- **Y-axis:** break-even `Δp*` (the probability improvement needed for the investment to pay off).
+- **Curve:** `Δp* = $5,000,000 / V_public`.
+- **Marked scenario points:** ($10M, 50%), ($25M, 20%), ($50M, 10%), ($100M, 5%), each labeled.
+- **Interpretation regions:** above the curve = assumed combinations that produce positive net expected public value; on the curve = break-even; below the curve = negative net expected public value.
+- **Assumptions visible:** every assumed value used (`C`, the `V_public` scenarios, and the `Δp` range) must be stated on the chart or in its caption, not left implicit.
+- The sensitivity matrix (Section 4) may appear as supporting quantitative detail in the paper, but is not the primary figure.
+- The chart's purpose is to show what would have to be true for the public investment to pay off — it must not imply that the actual probability improvement, or the actual public value of a successful project, is known.
 
 ## 6. Recommendation Framework
 
@@ -142,6 +174,14 @@ Geological/resource potential, installed/nameplate capacity, and actual generati
 Conclusion: no defensible Maui-specific commercial-capacity estimate exists. Future plant capacity is therefore not being treated as a known model input, and capacity is not being added as a third sensitivity axis alongside `Δp` and `V_public`. The locked two-variable framework (`Expected public value = Δp × V_public`; `Δp* = C / V_public`; `C = $5,000,000`) is unchanged. The point is not that the analysis lacks enough information to proceed — it is that hiding this uncertainty behind a plant-size assumption would make the model look more precise than the evidence supports. Historical resource estimates and PGV's existing scale may be used later as context for evaluating whether a given `V_public` scenario is economically plausible, but not as forecasts of what will be built. How the eventual `V_public` dollar scenarios will be constructed remains a separate, not-yet-made decision; no `Δp` range has been chosen and the chart has not been built.
 
 As with prior steps, all sources below were located and characterized via WebSearch synthesis in this environment; direct fetch to the underlying PDFs and web pages was blocked by this environment's egress proxy. None of these sources have been independently read in full and should not be treated as fully Verified in `data/sources.md` without that independent review.
+
+**2026-09-27 — Model design: sensitivity scenarios locked (no new research).** With `C` verified (Data Sources row 1) and `V_public`/`Δp` research completed as far as available evidence allows (Data Sources rows 7 and 9, no defensible point estimate for either), designed and locked the illustrative sensitivity scenarios used in Section 4 and the figure design in Section 5. This is a modeling/design decision, not a new research finding: no new sources were consulted and no new rows were added to `data/sources.md`.
+
+Two designs were compared for the `V_public`/`Δp` scenario set: keeping a $5,000,000 `V_public` scenario (which requires adding a 100% `Δp` value to represent its break-even point) versus dropping the $5,000,000 scenario and keeping `Δp` at 1%/5%/10%/20%/50%. The $5,000,000 scenario was excluded: its break-even threshold sits at an extreme boundary case (a 100-percentage-point probability improvement) that adds little analytical value and unnecessarily expands the sensitivity range. This is not read as characterization "guaranteeing success outright"; it is simply excluded from the range of scenarios used.
+
+The locked design: `V_public` scenarios of $10,000,000 / $25,000,000 / $50,000,000 / $100,000,000; `Δp` assumptions of 1% / 5% / 10% / 20% / 50%; break-even thresholds of 50% / 20% / 10% / 5% respectively (`Δp* = C / V_public`); and a net expected public value matrix (`(Δp × V_public) − C`) with one exact break-even cell per `V_public` column. All figures in this entry were calculated directly from the locked equations in Section 4, not sourced from new research. The figure itself (Section 5) is locked as a break-even curve (`V_public` on the x-axis, break-even `Δp*` on the y-axis), with the four scenario points marked, rather than a chart built directly from the matrix; the matrix remains available as supporting detail in the paper.
+
+As throughout, both the `V_public` and `Δp` values are illustrative sensitivity scenarios/assumptions, not empirical estimates: the `V_public` values do not imply any particular plant capacity, generation level, or project scale (see Data Sources row 4 and the Research Step 5 entry above), and the `Δp` values are not empirically observed effects of characterization (see Data Sources row 9). A positive net expected public value for a given combination means only that the combination passes this narrow expected-value test; it does not establish that the assumptions are likely, or that additional public funding should be approved. Row 8 (distribution/capture of value) has not been researched, and no funding recommendation is made by this entry.
 
 ---
 
