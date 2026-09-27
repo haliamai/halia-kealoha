@@ -101,6 +101,8 @@ One figure, required by the assignment and by Professor Stauffer's feedback. Des
 - The sensitivity matrix (Section 4) may appear as supporting quantitative detail in the paper, but is not the primary figure.
 - The chart's purpose is to show what would have to be true for the public investment to pay off — it must not imply that the actual probability improvement, or the actual public value of a successful project, is known.
 
+Rendered: `capabilities/economic-research/figures/breakeven-curve.png`, generated from `figures/breakeven_curve.py` using the locked equation and scenario points above.
+
 ## 6. Recommendation Framework
 
 Not a recommendation. This section names the candidate conditions the research will test; which of them, if any, hold is an empirical question to be settled by the research in Section 3.
@@ -182,6 +184,8 @@ Two designs were compared for the `V_public`/`Δp` scenario set: keeping a $5,00
 The locked design: `V_public` scenarios of $10,000,000 / $25,000,000 / $50,000,000 / $100,000,000; `Δp` assumptions of 1% / 5% / 10% / 20% / 50%; break-even thresholds of 50% / 20% / 10% / 5% respectively (`Δp* = C / V_public`); and a net expected public value matrix (`(Δp × V_public) − C`) with one exact break-even cell per `V_public` column. All figures in this entry were calculated directly from the locked equations in Section 4, not sourced from new research. The figure itself (Section 5) is locked as a break-even curve (`V_public` on the x-axis, break-even `Δp*` on the y-axis), with the four scenario points marked, rather than a chart built directly from the matrix; the matrix remains available as supporting detail in the paper.
 
 As throughout, both the `V_public` and `Δp` values are illustrative sensitivity scenarios/assumptions, not empirical estimates: the `V_public` values do not imply any particular plant capacity, generation level, or project scale (see Data Sources row 4 and the Research Step 5 entry above), and the `Δp` values are not empirically observed effects of characterization (see Data Sources row 9). A positive net expected public value for a given combination means only that the combination passes this narrow expected-value test; it does not establish that the assumptions are likely, or that additional public funding should be approved. Row 8 (distribution/capture of value) has not been researched, and no funding recommendation is made by this entry.
+
+**2026-09-27 — Figure rendered (no new research, no new assumptions).** Generated the locked break-even curve (Section 5) as a static PNG from the equation and four scenario points already locked in Section 4; no values were changed in producing it. Saved to `figures/breakeven-curve.png`, generation script at `figures/breakeven_curve.py`.
 
 ---
 

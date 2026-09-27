@@ -158,6 +158,16 @@
 
 **Verification:** AI-assisted recalculation was used to recompute the full net-value matrix from the locked equations rather than hand-edit the earlier (incorrect) gross-value table, and every break-even marking was rechecked against the equation rather than carried forward from the prior pass. After comparing the two proposed designs, Option B (dropping the $5M `V_public` scenario) was approved on the grounds of analytical clarity, not to make the investment look more or less favorable. I also specified that the excluded $5M scenario should not be described as characterization "guaranteeing success outright," since that overstates what excluding an extreme boundary case actually means. All dollar and percentage values recorded here are computed directly from the locked equations in Section 4 using inputs already established in prior research steps; no new sources were consulted, and no new `data/sources.md` rows were needed for this entry.
 
+## September 27, 2026 — Geothermal Break-Even Figure: Generation and Presentation
+
+**Tool:** Claude Code
+
+**Purpose:** Render Figure 1 (the break-even curve locked in `capabilities/economic-research/spec.md` Section 5) as a static image and a reproducible generation script, from the already-locked equation and scenario values. No model design or calculation work was done in this step; that is documented in the prior model-design entry.
+
+**Use:** AI wrote a Python/matplotlib script that computes the break-even curve and the four scenario points directly from `Δp* = $5,000,000 / V_public`, rather than hard-coding plotted positions, and rendered it as a PNG. The four plotted break-even points were checked against the equation before plotting. Over a few review rounds, the display range was revised from an initially proposed $10M–$150M range down to the locked $10M–$100M scenario range, so the chart wouldn't show a display endpoint beyond what's actually locked; the title and Note text were shortened and refined for paper readability without changing the analysis; and the `$10M, 50%` point label's placement was adjusted for readability (it originally crowded the plot's left/top boundary).
+
+**Verification:** I reviewed the rendered figure directly (not just the underlying numbers) across each revision and confirmed the axis range, the four scenario points, the title, the Note wording, and the label placement before treating the design as final. No research was conducted, no model assumptions or underlying values changed, and the equation and locked scenario values in Section 4 were not touched during figure production.
+
 ## My Reflection
 
 AI supported me from the start, helping break down concepts and walk me through GitHub step by step, and between Claude and ChatGPT I worked through the early issues. From there, AI helped me build the Excel model based on Stage 1.2 (I can't imagine how many hours that would've taken manually) and troubleshoot Solver on Excel for Mac, especially a tricky cross-sheet constraint issue. It also gave me structural feedback throughout, helping me spot where my reasoning needed more support.
