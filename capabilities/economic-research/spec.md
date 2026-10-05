@@ -45,14 +45,14 @@ These operationalize Professor Stauffer's four execution steps and the two marke
 
 ## 4. Quantitative Method
 
-This section defines the calculation structure only. `C`, `Δp`, and `V_public` are each pending — see Section 2 — and none should be treated as known until sourced.
+This section defines the calculation structure only. `C` is verified at $5,000,000 (Data Sources row 1) and may be used in the model; `Δp` and `V_public` remain sensitivity assumptions rather than empirical estimates — see Section 2 — and neither should be treated as a known empirical quantity.
 
 ```
 Expected public net value = Δp × V_public − C
 Break-even Δp* = C / V_public
 ```
 
-- `C` — the public cost of the program. Verified at $5,000,000 (Data Sources row 1; full citations in `data/sources.md`), sourced to Hawaiʻi State Energy Office testimony and corroborated by a matching University of Hawaiʻi award record. May now be used in the model.
+- `C` — the public cost of the program. Verified at $5,000,000 (Data Sources row 1; full citations in `data/sources.md`), sourced to the Hawaiʻi State Energy Office's "Geothermal" program page and corroborated by a matching University of Hawaiʻi award record. May now be used in the model.
 - `Δp` — an assumed improvement in the probability of successful commercial development attributable to characterization. This is not empirically known from research completed so far. It must remain an explicit, stated assumption varied across the sensitivity analysis unless a genuinely defensible estimate is found (Data Sources row 9). A comparable-jurisdiction proxy is not a default substitute and requires explicit justification and approval before use.
 - `V_public` — the public economic value of a successful development outcome. This explicitly excludes total project value and private developer return. Its components are not defined or invented in this spec; identifying defensible components, sourcing them, and avoiding double-counting across them is a research task (Section 3, task 6; Data Sources row 7).
 
@@ -101,7 +101,7 @@ One figure, required by the assignment and by Professor Stauffer's feedback. Des
 - The sensitivity matrix (Section 4) may appear as supporting quantitative detail in the paper, but is not the primary figure.
 - The chart's purpose is to show what would have to be true for the public investment to pay off — it must not imply that the actual probability improvement, or the actual public value of a successful project, is known.
 
-Rendered: `capabilities/economic-research/figures/breakeven-curve.png`, generated from `figures/breakeven_curve.py` using the locked equation and scenario points above.
+Rendered: `figures/breakeven-curve.png`, generated from `figures/breakeven_curve.py` using the locked equation and scenario points above.
 
 ## 6. Recommendation Framework
 
@@ -194,6 +194,8 @@ As throughout, both the `V_public` and `Δp` values are illustrative sensitivity
 
 No research was reopened, and `C`, `Δp`, `V_public`, the sensitivity scenarios, the equations, the net-value matrix, and Figure 1 are all unchanged by this entry.
 
+**2026-10-03 — Figure 1 relocated to repo-root `figures/` (no change to the figure itself).** The finalized Figure 1 PNG and its generating script, originally saved to `capabilities/economic-research/figures/` on 2026-09-27, were moved together (not copied) to repo-root `figures/`, to match the research-paper deliverable's expected directory structure and keep a single reproducible source of truth — one PNG, one generating script, co-located. The move was a plain file relocation via `git mv`; the PNG was confirmed byte-for-byte identical before and after (matching MD5 checksums), and the script's own output-path logic (`os.path.dirname(os.path.abspath(__file__))`) required no code change, since it writes beside wherever it lives. No equation, scenario value, assumption, or plotted data point was touched. The Sept 27 entry above, which records the figure's original save location, is left as written, since that was accurate at the time; this entry documents the relocation itself, not a correction to that entry.
+
 **2026-09-27 — Research Step 8: Distribution/capture of economic value — Partially Supported.** Investigated who captures economic value if publicly funded characterization eventually contributes to successful commercial geothermal development (Data Sources row 8), focused on the State/public, private developers, Native Hawaiian beneficiaries via DHHL, counties, and host communities.
 
 **County:** HRS §182-7(c) directs that 30% of geothermal royalties received by the State be paid to the county in which the covered geothermal mining operations are situated, subject to the separate DHHL-land provision below. This is a fixed, statutory county share, cross-checked this pass against Hawaiʻi government-hosted statutory text (`capitol.hawaii.gov`) rather than a secondary mirror only; it has not been personally read in full by either of us.
@@ -223,6 +225,16 @@ This research did not empirically establish or quantify systematic private under
 Accordingly: this research does not claim a geothermal characterization market failure has been proven, does not state that private developers lack sufficient incentive as an established fact, and does not treat current government funding as self-justifying. The defensible statement the paper may make is: high upfront exploration and appraisal costs are well documented, and DOE's own Geothermal Data Repository states its mission includes making DOE-funded geothermal data freely and publicly available to reduce duplication of effort and promote scientific discovery; however, this analysis does not establish that private developers in Hawaiʻi systematically underinvest in characterization, or measure the size of any such investment gap, and does not attribute an uncertainty-reduction/drilling-encouragement rationale to DOE specifically.
 
 **Effect on the recommendation:** neither finding changes the locked recommendation. Row 2 closes a documentation gap with no analytical content. Row 5's finding affects how the economic rationale is explained in the paper — precisely, and without overstating the evidence — not the recommendation itself, which was not built on an assumed or proven market failure.
+
+**2026-10-05 — Final-production bibliography cleanup (mechanical, no substantive change).** Ahead of PDF export, closed three low-stakes reference-formatting items flagged by the final audit, none of which touch any claim, analysis, model, recommendation, or figure:
+
+1. **Alphabetical order.** `Haw. Rev. Stat. § 182-7(c)` was listed after the Hawaiʻi State Energy Office entry; moved to its correct position (between Department of Hawaiian Home Lands and Hawaiʻi Department of Business, Economic Development & Tourism), since "Haw." sorts before "Hawaiʻi" as a shorter prefix string.
+2. **HRS §182-7(c) citation year.** WebSearch confirms APA convention calls for a year representing the specific bound-volume/compiled edition a statute was read in, not the current year by default. Direct access to the official `capitol.hawaii.gov` page to confirm which specific codification year applies remained blocked in this environment, consistent with every other direct-retrieval attempt on this engagement. No year was added, since inventing one to look consistent with the other reference entries would misrepresent a detail that hasn't actually been confirmed. The reference is left exactly as it was; the researcher may supply the correct year herself if she recalls or can confirm it from her own 2026-10-01 personal review of that page.
+3. **Wall & Dobson (2016) author initials.** A prior audit flagged these initials as unverified. WebSearch this pass surfaced the authors' full names as Anna M. Wall and Patrick F. Dobson, which matches the existing "A. M." and "P. F." initials in the reference exactly. This is WebSearch-derived corroboration, not a direct read of the original paper (which remains blocked), but it gives no reason to believe the existing initials are wrong, so the reference is left unchanged.
+
+`C`, `Δp`, `V_public`, the sensitivity scenarios, the equations, the net-value matrix, Figure 1, and the Recommendation are all unchanged by this entry.
+
+**2026-10-05 — Final-production caption-duplication cleanup (mechanical, no substantive change).** Compared the explanatory "Note." caption baked into `figures/breakeven-curve.png` (drawn directly from `note_text` in `figures/breakeven_curve.py`) against the separate italic "Note." paragraph that followed the figure embed in the paper's Markdown. The two were word-for-word identical in substance (same sentences, same content, differing only in LaTeX-vs-Unicode rendering of `Δp*` and `V_public`), so Figure 1's page displayed the same explanation twice. Removed the redundant external "Note." paragraph from `docs/decisions/hawaii-geothermal-paper.md`; the image's own baked-in note is unchanged and is now the only copy. The italic subtitle line above the figure embed was left in place — it was not part of what was flagged as duplicated. The PNG itself was not altered or regenerated. `drafts/2026-10-05-geothermal-paper-draft-4.md`, which predates this cleanup, was left untouched. No claim, analysis, model, number, or recommendation was touched.
 
 ---
 

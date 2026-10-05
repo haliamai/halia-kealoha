@@ -61,17 +61,19 @@ A second $5 million investment could break even under plausible combinations of 
 
 ![Figure 1. Break-Even Probability Improvement Needed for a $5 Million Characterization Investment, by Assumed Public Value](../../figures/breakeven-curve.png)
 
+*Note. The curve shows the minimum improvement in the probability of successful commercial development (Δp\*) needed for a $5 million characterization investment to break even at different assumed levels of public value (V_public). Both variables are sensitivity assumptions, not empirical estimates. Points above the curve produce positive net expected public value under the stated assumptions; points below produce negative net expected public value. A positive result does not, by itself, establish that additional public funding is justified.*
+
 # References
 
 County of Hawaiʻi. (2024). *Annual comprehensive financial report for the fiscal year ended June 30, 2024.* https://records.hawaiicounty.gov/weblink/1/edoc/150340/2024-COH%20-%20Annual%20Comprehensive%20Financial%20Report.pdf
 
 Department of Hawaiian Home Lands. (2014). *AG opinion: Geothermal proceeds on DHHL lands.* https://dhhl.hawaii.gov/2014/03/18/7897/
 
-Haw. Rev. Stat. § 182-7(c). https://www.capitol.hawaii.gov/hrscurrent/vol03_ch0121-0200d/HRS0182/HRS_0182-0007.htm
-
 Hawaiʻi Department of Business, Economic Development & Tourism. (2025). *Report on non-general fund information to the 2026 Legislature: Appropriation account S-276-B.* https://files.hawaii.gov/dbedt/annuals/2025/2026-aso-non-general-fund-report.pdf
 
 Hawaiʻi State Energy Office. (n.d.). *Geothermal.* Retrieved September 25, 2026, from https://energy.hawaii.gov/geothermal/
+
+Haw. Rev. Stat. § 182-7(c). https://www.capitol.hawaii.gov/hrscurrent/vol03_ch0121-0200d/HRS0182/HRS_0182-0007.htm
 
 U.S. Department of Energy. (n.d.). *Geothermal Data Repository.* Retrieved September 27, 2026, from https://gdr.openei.org/about
 
