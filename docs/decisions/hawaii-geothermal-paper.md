@@ -15,7 +15,7 @@ My recommendation is to finish and evaluate the current program before committin
 
 ## What $5 Million Actually Buys
 
-This money is not building a power plant; it is buying information about the resource. That information has economic value because geothermal development requires substantial exploration spending while major questions remain unresolved. Better information can improve development decisions, including whether to walk away.
+This money is not building a power plant; it is buying information about the resource. That information has economic value because geothermal development requires substantial exploration spending while major questions remain unresolved. Better information can improve development decisions, including whether to walk away. I also recognize that characterization can create value by helping developers avoid spending money on unsuccessful drilling. However, I chose not to include those savings in my model because they would primarily benefit the private developer, while my analysis focuses specifically on public economic value.
 
 There is also a spillover when publicly funded information is not locked up with one company. The Department of Energy's Geothermal Data Repository provides public access to data from DOE-funded geothermal projects (U.S. Department of Energy [DOE], n.d.). I view that structure as a public-good benefit because the information can be reused beyond whoever funded it first. But I found no evidence that Hawaiʻi's private developers systematically underinvest in characterization. High costs and uncertainty alone do not prove a market failure, so the current program does not automatically justify another round.
 
@@ -37,7 +37,7 @@ I found no Hawaiʻi-specific estimate of how much public characterization improv
 
 V_public also requires care. Private developer revenue does not automatically flow to taxpayers, so I exclude it. Potential public value instead includes royalties, avoided fossil-fuel or ratepayer costs, avoided emissions damage, and energy security. Converting those benefits into one Maui-specific dollar estimate would require assumptions about a project that does not yet exist, which is why I test a range of V_public values.
 
-Distribution matters because economic value and who captures it are different questions. State law allocates a county share of geothermal royalties (Haw. Rev. Stat. § 182-7(c)). On Hawaiian home lands, the state Attorney General determined that geothermal royalties go to the Department of Hawaiian Home Lands under the Hawaiian Homes Commission Act (Department of Hawaiian Home Lands [DHHL], 2014). Hawaiʻi County has also directed geothermal royalty revenue toward relocation and community benefits in Lower Puna (County of Hawaiʻi, 2024). These examples do not determine how a hypothetical Maui project's benefits would be divided; land tenure and project structure would matter.
+Distribution matters because economic value and who captures it are different questions. State law allocates a county share of geothermal royalties (Haw. Rev. Stat. § 182-7(c), 2025). On Hawaiian home lands, the state Attorney General determined that geothermal royalties go to the Department of Hawaiian Home Lands under the Hawaiian Homes Commission Act (Department of Hawaiian Home Lands [DHHL], 2014). Hawaiʻi County has also directed geothermal royalty revenue toward relocation and community benefits in Lower Puna (County of Hawaiʻi, 2024). These examples do not determine how a hypothetical Maui project's benefits would be divided; land tenure and project structure would matter.
 
 ## Recommendation
 
@@ -67,7 +67,7 @@ County of Hawaiʻi. (2024). *Annual comprehensive financial report for the fisca
 
 Department of Hawaiian Home Lands. (2014). *AG opinion: Geothermal proceeds on DHHL lands.* https://dhhl.hawaii.gov/2014/03/18/7897/
 
-Haw. Rev. Stat. § 182-7(c). https://www.capitol.hawaii.gov/hrscurrent/vol03_ch0121-0200d/HRS0182/HRS_0182-0007.htm
+Haw. Rev. Stat. § 182-7(c) (2025). https://www.capitol.hawaii.gov/hrscurrent/vol03_ch0121-0200d/HRS0182/HRS_0182-0007.htm
 
 Hawaiʻi Department of Business, Economic Development & Tourism. (2025). *Report on non-general fund information to the 2026 Legislature: Appropriation account S-276-B.* https://files.hawaii.gov/dbedt/annuals/2025/2026-aso-non-general-fund-report.pdf
 

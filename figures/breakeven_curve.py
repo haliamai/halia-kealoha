@@ -102,10 +102,6 @@ ax.set_xlabel("Assumed public value if the project succeeds ($V_{public}$, illus
 ax.set_ylabel("Break-even probability improvement needed ($\\Delta p^{*}$)",
               fontsize=10.5, color=text_primary, labelpad=10)
 
-fig_title = ("Figure 1. Break-Even Probability Improvement Needed for a $5 Million\n"
-             "Characterization Investment, by Assumed Public Value")
-fig.suptitle(fig_title, fontsize=13.5, color=text_primary, fontweight="bold", y=0.985)
-
 # Grid (recessive)
 ax.grid(True, color=grid_color, linewidth=0.7, zorder=0)
 ax.set_axisbelow(True)
@@ -126,7 +122,7 @@ note_wrapped = "\n".join(textwrap.wrap(note_text, width=98))
 n_lines = note_wrapped.count("\n") + 1
 bottom_margin = 0.022 * n_lines + 0.015
 
-plt.tight_layout(rect=[0, bottom_margin, 1, 0.90])
+plt.tight_layout(rect=[0, bottom_margin, 1, 1])
 
 # Caption note, below the axes (figure-level, clear of the plot area)
 fig.text(0.5, 0.01, note_wrapped, ha="center", va="bottom", fontsize=8.5, color=text_secondary)
