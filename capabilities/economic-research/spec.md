@@ -244,6 +244,8 @@ Accordingly: this research does not claim a geothermal characterization market f
 
 `C`, `Δp`, `V_public`, the sensitivity scenarios, the equations, the net-value matrix, and the Recommendation are all unchanged by this entry.
 
+**2026-10-09 — Walk-away clarification revised (substantive, researcher-authored and approved).** After reviewing the October 8 Word export, the researcher revised the walk-away clarification added the previous entry. The sentence excluding avoided-drilling-cost savings from the model no longer states they would "primarily benefit the private developer"; it now acknowledges some of those savings could reach the public through lower electricity costs or reduced public spending, but states there isn't enough evidence to determine how much of that would actually reach the public — a narrower, more defensible evidentiary claim than the earlier version. Ported verbatim from the researcher's approved Word edit into `docs/decisions/hawaii-geothermal-paper.md`. No model input, equation, scenario, or recommendation changed.
+
 ---
 
 **Source-management convention (established here, not yet in use):**
